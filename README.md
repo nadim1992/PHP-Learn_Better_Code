@@ -1,2 +1,3 @@
-# PHP-Learn_Better_Code
-Algorithms and Data structures with PHP
+# PHP: learn better code
+
+Algorithms and Data structures with PHP (version 7+)

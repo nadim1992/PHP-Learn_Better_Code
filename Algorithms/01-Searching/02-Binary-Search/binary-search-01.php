@@ -3,7 +3,7 @@
 /**
  * Recursive implementation of Binary Search
  */
-class BinarySearch
+final class BinarySearch
 {
     public static function search(array $data, int $left, int $right, int $elem) : int
     {

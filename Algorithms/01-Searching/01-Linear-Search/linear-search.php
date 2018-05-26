@@ -1,6 +1,6 @@
 <?php
 
-class LinearSearch
+final class LinearSearch
 {
     public static function search(array $data, int $elem) : int
     {

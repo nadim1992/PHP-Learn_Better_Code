@@ -3,7 +3,7 @@
 /**
  * Iterative implementation of Binary Search
  */
-class BinarySearch
+final class BinarySearch
 {
     public static function search(array $data, int $elem) : int
     {

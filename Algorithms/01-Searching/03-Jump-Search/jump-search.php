@@ -1,6 +1,6 @@
 <?php
 
-class JumpSearch
+final class JumpSearch
 {
     public static function search(array $data, int $elem) : int
     {

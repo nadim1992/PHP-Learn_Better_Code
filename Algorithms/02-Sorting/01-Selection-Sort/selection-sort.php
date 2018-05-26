@@ -1,6 +1,6 @@
 <?php
 
-class SelectionSort
+final class SelectionSort
 {
     public static function sort(array $data) : array
     {

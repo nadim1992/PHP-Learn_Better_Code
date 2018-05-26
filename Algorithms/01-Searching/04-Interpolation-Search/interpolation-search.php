@@ -1,6 +1,6 @@
 <?php
 
-class InterpolationSearch
+final class InterpolationSearch
 {
     public static function search(array $data, int $elem) : int
     {

@@ -11,7 +11,7 @@ final class JumpSearch
 
         $prev = 0;
 
-        while($data[min($step, $data_length) - 1] < $elem) {
+        while ($data[min($step, $data_length) - 1] < $elem) {
             $prev = $step;
             $step += sqrt($elem);
 

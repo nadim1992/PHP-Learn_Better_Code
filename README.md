@@ -7,3 +7,4 @@ Algorithms and Data structures with PHP (version 7+)
 * Linear Search
 * Binary Search
 * Jump Search
+* Interpolation Search

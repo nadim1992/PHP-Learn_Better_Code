@@ -2,7 +2,7 @@
 
 class LinearSearch
 {
-    public static function search(array $data, int $elem)
+    public static function search(array $data, int $elem) : int
     {
         $data_length = count($data);
 

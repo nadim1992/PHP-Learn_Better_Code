@@ -1,6 +1,6 @@
 <?php
 
-final class SelectionSort
+final class BubbleSort
 {
     public static function sort(array $data) : array
     {
@@ -8,19 +8,15 @@ final class SelectionSort
 
         // One by one move boundary of unsorted subarray
         for ($i = 0; $i < $data_length; $i++) {
-            // Find the minimum element in unsorted array
-            $min_indx = $i;
+            for ($j = 0; $j < $data_length - 1; $j++) {
+                if ($data[$j] > $data[$j + 1]) {
+                    // Swap the element
 
-            for ($j = $i + 1; $j < $data_length; $j++) {
-                if ($data[$j] < $data[$min_indx]) {
-                    $min_indx = $j;
+                    $temp = $data[$j];
+                    $data[$j] = $data[$j + 1];
+                    $data[$j + 1] = $temp;
                 }
             }
-
-            // Swap the found minimum element with the first element
-            $temp = $data[$min_indx];
-            $data[$min_indx] = $data[$i];
-            $data[$i] = $temp;
         }
 
         return $data;
@@ -35,6 +31,6 @@ final class SelectionSort
 
 $data = [4, 55, 6, 43, 99, 534, 2, 44, 99, 21, 24, 25, 66, 7];
 
-$result = SelectionSort::sort($data);
+$result = BubbleSort::sort($data);
 
 echo 'Sorted array: ' . json_encode($result);

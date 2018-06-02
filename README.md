@@ -14,3 +14,4 @@ _Searching_
 _Sorting_
 
 * Selection Sort
+* Bubble Sort

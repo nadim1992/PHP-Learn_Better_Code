@@ -6,8 +6,15 @@ final class SelectionSort
     {
         $data_length = count($data);
 
-        // One by one move boundary of unsorted subarray
-        for ($i = 0; $i < $data_length; $i++) {
+        /*
+         * `$data_length - 1` why?
+         * don't need to sort the last item because
+         * it has been already sorted when every other element will sort
+         *
+         *
+         * One by one move boundary of unsorted subarray
+         */
+        for ($i = 0; $i < $data_length - 1; $i++) {
             // Find the minimum element in unsorted array
             $min_indx = $i;
 

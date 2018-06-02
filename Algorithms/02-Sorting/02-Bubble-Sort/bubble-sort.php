@@ -6,9 +6,16 @@ final class BubbleSort
     {
         $data_length = count($data);
 
-        // One by one move boundary of unsorted subarray
-        for ($i = 0; $i < $data_length; $i++) {
-            for ($j = 0; $j < $data_length - 1; $j++) {
+        /*
+         * `$data_length - 1` why?
+         * don't need to sort the last item because
+         * it has been already sorted when every other element will sort
+         *
+         *
+         * One by one move boundary of unsorted subarray
+         */
+        for ($i = 0; $i < $data_length - 1; $i++) {
+            for ($j = 0; $j < $data_length - $i - 1; $j++) {
                 if ($data[$j] > $data[$j + 1]) {
                     // Swap the element
 

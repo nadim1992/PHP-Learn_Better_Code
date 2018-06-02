@@ -8,7 +8,7 @@ final class InterpolationSearch
         $hi = count($data) - 1;
 
         while ($lo < $hi && $elem >= $data[$lo] && $elem <= $data[$hi] ) {
-            $pos = $lo + ( ($hi - $lo) / ($data[$hi] - $data[$lo]) ) * ( $elem - $data[$lo] );
+            $pos = floor($lo + ( ($hi - $lo) / ($data[$hi] - $data[$lo]) ) * ( $elem - $data[$lo] ));
 
             if ($data[$pos] === $elem) {
                 return $pos;

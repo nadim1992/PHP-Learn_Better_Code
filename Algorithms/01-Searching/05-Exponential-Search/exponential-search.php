@@ -14,11 +14,9 @@ final class ExponentialSearch
 
         while ($i < $data_length && $data[$i] <= $elem) {
             $i = $i * 2;
-
-            return static::binarySearch($data, $i / 2, min($i, $data_length), $elem);
         }
 
-        return -1;
+        return static::binarySearch($data, $i / 2, min($i, $data_length), $elem);
     }
 
     public static function binarySearch(array $data, int $left, int $right, int $elem) : int

@@ -10,6 +10,7 @@ _Searching_
 * Binary Search
 * Jump Search
 * Interpolation Search
+* Exponential Search
 
 _Sorting_
 

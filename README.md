@@ -16,3 +16,5 @@ _Sorting_
 
 * Selection Sort
 * Bubble Sort
+
+> Design Patterns
